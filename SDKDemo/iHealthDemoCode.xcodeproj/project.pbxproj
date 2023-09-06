@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1719EBB186EB8BCB7D15A318 /* Pods_iHealthDemoCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D39B4E1DDBF63046F19A5B4 /* Pods_iHealthDemoCode.framework */; };
 		189BBC7F1E9490A00098589E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189BBC7D1E9490A00098589E /* InfoPlist.strings */; };
-		18DA00972019BB9D00FCF5DB /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC29B8E520088532007E912B /* libc++.1.tbd */; };
 		3F9531B629E5489200A4BFD8 /* SDKDemoHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9531B529E5489200A4BFD8 /* SDKDemoHomeVC.m */; };
 		3F9531BA29E5499A00A4BFD8 /* IHSDKBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9531B929E5499A00A4BFD8 /* IHSDKBaseController.m */; };
 		3F9531BE29E54A9800A4BFD8 /* IHSDKColorConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9531BD29E54A9800A4BFD8 /* IHSDKColorConstant.m */; };
@@ -26,18 +25,6 @@
 		3F9531E329E563FC00A4BFD8 /* IHSDKDemoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9531E229E563FC00A4BFD8 /* IHSDKDemoTableView.m */; };
 		3F9531E629E566A700A4BFD8 /* IHSDKDemoRoundCornerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9531E529E566A700A4BFD8 /* IHSDKDemoRoundCornerButton.m */; };
 		3F9531E929E69C9400A4BFD8 /* IHSDKBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9531E829E69C9400A4BFD8 /* IHSDKBaseCell.m */; };
-		3F9531F729E6A47E00A4BFD8 /* TTNormsPro-ExtraBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531EB29E6A47E00A4BFD8 /* TTNormsPro-ExtraBlack.otf */; };
-		3F9531F829E6A47E00A4BFD8 /* TTNormsPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531EC29E6A47E00A4BFD8 /* TTNormsPro-Regular.otf */; };
-		3F9531F929E6A47E00A4BFD8 /* TTNormsPro-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531ED29E6A47E00A4BFD8 /* TTNormsPro-ExtraBold.otf */; };
-		3F9531FA29E6A47E00A4BFD8 /* TTNormsPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531EE29E6A47E00A4BFD8 /* TTNormsPro-Black.otf */; };
-		3F9531FB29E6A47E00A4BFD8 /* TTNormsPro-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531EF29E6A47E00A4BFD8 /* TTNormsPro-Normal.otf */; };
-		3F9531FC29E6A47E00A4BFD8 /* TTNormsPro-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531F029E6A47E00A4BFD8 /* TTNormsPro-DemiBold.otf */; };
-		3F9531FD29E6A47E00A4BFD8 /* TTNormsPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531F129E6A47E00A4BFD8 /* TTNormsPro-Medium.otf */; };
-		3F9531FE29E6A47E00A4BFD8 /* TT Norms Pro Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531F229E6A47E00A4BFD8 /* TT Norms Pro Medium.ttf */; };
-		3F9531FF29E6A47E00A4BFD8 /* TTNormsPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531F329E6A47E00A4BFD8 /* TTNormsPro-Bold.otf */; };
-		3F95320029E6A47E00A4BFD8 /* TTNormsPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531F429E6A47E00A4BFD8 /* TTNormsPro-Light.otf */; };
-		3F95320129E6A47E00A4BFD8 /* TTNormsPro-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531F529E6A47E00A4BFD8 /* TTNormsPro-Thin.otf */; };
-		3F95320229E6A47E00A4BFD8 /* TTNormsPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F9531F629E6A47E00A4BFD8 /* TTNormsPro-ExtraLight.otf */; };
 		3F95320629E6AB6F00A4BFD8 /* DeviceKN550BTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95320529E6AB6F00A4BFD8 /* DeviceKN550BTVC.m */; };
 		3F95320929E6AE5B00A4BFD8 /* IHSDKDeviceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95320829E6AE5B00A4BFD8 /* IHSDKDeviceList.m */; };
 		45260DB92A935AFE00E10533 /* DeviceBG1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45260DB82A935AFE00E10533 /* DeviceBG1VC.m */; };
@@ -50,6 +37,7 @@
 		4565279429EE9A3600C7A9D7 /* DeviceAM6BindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4565279329EE9A3600C7A9D7 /* DeviceAM6BindVC.m */; };
 		4565279729EE9A9900C7A9D7 /* DeviceAM6NotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4565279629EE9A9900C7A9D7 /* DeviceAM6NotificationVC.m */; };
 		4565279D29EE9B1D00C7A9D7 /* DeviceAM6GeneralControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4565279C29EE9B1D00C7A9D7 /* DeviceAM6GeneralControlVC.m */; };
+		458874732AA866170046E22C /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 458874722AA866170046E22C /* libc++.1.tbd */; };
 		458EEA2A2A4AD9D30088D253 /* DeviceAM6FindPhoneUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 458EEA292A4AD9D30088D253 /* DeviceAM6FindPhoneUtils.m */; };
 		458EEA2C2A4ADA590088D253 /* FindPhoneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 458EEA2B2A4ADA580088D253 /* FindPhoneAudio.mp3 */; };
 		45A0E82D2A738984004B5DE6 /* DevicePO3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A0E82C2A738984004B5DE6 /* DevicePO3VC.m */; };
@@ -69,6 +57,8 @@
 		45A21F482A38C1EC00242D08 /* WZLatteCaloriesPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A21F472A38C1EC00242D08 /* WZLatteCaloriesPicker.m */; };
 		45A21F4A2A394A2700242D08 /* AM6Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A21F492A394A2700242D08 /* AM6Image.xcassets */; };
 		45A21F4D2A394B0400242D08 /* UILabel+WPKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A21F4B2A394B0300242D08 /* UILabel+WPKLabel.m */; };
+		45A870272AA876A400C2A284 /* DeviceBP3LVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A870262AA876A400C2A284 /* DeviceBP3LVC.m */; };
+		45A8702A2AA876BC00C2A284 /* DeviceBP5SVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A870292AA876BC00C2A284 /* DeviceBP5SVC.m */; };
 		45B57E782A136DD1001EE953 /* DeviceAM5VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B57E772A136DD1001EE953 /* DeviceAM5VC.m */; };
 		45EE0F5C2AA80B5400CEF601 /* iHealthSDK2.10.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE0F5B2AA80B5200CEF601 /* iHealthSDK2.10.0.a */; };
 		45F4E0682A83351300CBC224 /* DevicePO1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F4E0672A83351300CBC224 /* DevicePO1VC.m */; };
@@ -119,18 +109,6 @@
 		3F9531E529E566A700A4BFD8 /* IHSDKDemoRoundCornerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHSDKDemoRoundCornerButton.m; sourceTree = "<group>"; };
 		3F9531E729E69C9400A4BFD8 /* IHSDKBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHSDKBaseCell.h; sourceTree = "<group>"; };
 		3F9531E829E69C9400A4BFD8 /* IHSDKBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHSDKBaseCell.m; sourceTree = "<group>"; };
-		3F9531EB29E6A47E00A4BFD8 /* TTNormsPro-ExtraBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-ExtraBlack.otf"; sourceTree = "<group>"; };
-		3F9531EC29E6A47E00A4BFD8 /* TTNormsPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-Regular.otf"; sourceTree = "<group>"; };
-		3F9531ED29E6A47E00A4BFD8 /* TTNormsPro-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-ExtraBold.otf"; sourceTree = "<group>"; };
-		3F9531EE29E6A47E00A4BFD8 /* TTNormsPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-Black.otf"; sourceTree = "<group>"; };
-		3F9531EF29E6A47E00A4BFD8 /* TTNormsPro-Normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-Normal.otf"; sourceTree = "<group>"; };
-		3F9531F029E6A47E00A4BFD8 /* TTNormsPro-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-DemiBold.otf"; sourceTree = "<group>"; };
-		3F9531F129E6A47E00A4BFD8 /* TTNormsPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-Medium.otf"; sourceTree = "<group>"; };
-		3F9531F229E6A47E00A4BFD8 /* TT Norms Pro Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Medium.ttf"; sourceTree = "<group>"; };
-		3F9531F329E6A47E00A4BFD8 /* TTNormsPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-Bold.otf"; sourceTree = "<group>"; };
-		3F9531F429E6A47E00A4BFD8 /* TTNormsPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-Light.otf"; sourceTree = "<group>"; };
-		3F9531F529E6A47E00A4BFD8 /* TTNormsPro-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-Thin.otf"; sourceTree = "<group>"; };
-		3F9531F629E6A47E00A4BFD8 /* TTNormsPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNormsPro-ExtraLight.otf"; sourceTree = "<group>"; };
 		3F95320429E6AB6F00A4BFD8 /* DeviceKN550BTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceKN550BTVC.h; sourceTree = "<group>"; };
 		3F95320529E6AB6F00A4BFD8 /* DeviceKN550BTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceKN550BTVC.m; sourceTree = "<group>"; };
 		3F95320729E6AE5B00A4BFD8 /* IHSDKDeviceList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHSDKDeviceList.h; sourceTree = "<group>"; };
@@ -155,6 +133,9 @@
 		4565279629EE9A9900C7A9D7 /* DeviceAM6NotificationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceAM6NotificationVC.m; sourceTree = "<group>"; };
 		4565279B29EE9B1D00C7A9D7 /* DeviceAM6GeneralControlVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceAM6GeneralControlVC.h; sourceTree = "<group>"; };
 		4565279C29EE9B1D00C7A9D7 /* DeviceAM6GeneralControlVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceAM6GeneralControlVC.m; sourceTree = "<group>"; };
+		458874722AA866170046E22C /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		458874742AA8676C0046E22C /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		458874782AA8677E0046E22C /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		458EEA282A4AD9D20088D253 /* DeviceAM6FindPhoneUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceAM6FindPhoneUtils.h; sourceTree = "<group>"; };
 		458EEA292A4AD9D30088D253 /* DeviceAM6FindPhoneUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceAM6FindPhoneUtils.m; sourceTree = "<group>"; };
 		458EEA2B2A4ADA580088D253 /* FindPhoneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FindPhoneAudio.mp3; sourceTree = "<group>"; };
@@ -191,6 +172,10 @@
 		45A21F492A394A2700242D08 /* AM6Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AM6Image.xcassets; sourceTree = "<group>"; };
 		45A21F4B2A394B0300242D08 /* UILabel+WPKLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WPKLabel.m"; sourceTree = "<group>"; };
 		45A21F4C2A394B0400242D08 /* UILabel+WPKLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WPKLabel.h"; sourceTree = "<group>"; };
+		45A870252AA876A400C2A284 /* DeviceBP3LVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceBP3LVC.h; sourceTree = "<group>"; };
+		45A870262AA876A400C2A284 /* DeviceBP3LVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceBP3LVC.m; sourceTree = "<group>"; };
+		45A870282AA876BC00C2A284 /* DeviceBP5SVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceBP5SVC.h; sourceTree = "<group>"; };
+		45A870292AA876BC00C2A284 /* DeviceBP5SVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceBP5SVC.m; sourceTree = "<group>"; };
 		45B57E762A136DD1001EE953 /* DeviceAM5VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceAM5VC.h; sourceTree = "<group>"; };
 		45B57E772A136DD1001EE953 /* DeviceAM5VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceAM5VC.m; sourceTree = "<group>"; };
 		45EE0EC02AA80B5100CEF601 /* IDOSyncBpDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDOSyncBpDataModel.h; sourceTree = "<group>"; };
@@ -360,15 +345,9 @@
 		4D48B74D19D0F40D00BA5A84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D48B74E19D0F40D00BA5A84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4D48B75919D0F40D00BA5A84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4D48B76019D0F40D00BA5A84 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4D48B76819D0F40D00BA5A84 /* iHealthDemoCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHealthDemoCodeTests-Info.plist"; sourceTree = "<group>"; };
-		4D48B76A19D0F40D00BA5A84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4D48B76C19D0F40D00BA5A84 /* iHealthDemoCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHealthDemoCodeTests.m; sourceTree = "<group>"; };
 		4D48B7A719D0FA8B00BA5A84 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		5DCA751339503DDA9BABF2F9 /* Pods-iHealthDemoCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealthDemoCode.release.xcconfig"; path = "Target Support Files/Pods-iHealthDemoCode/Pods-iHealthDemoCode.release.xcconfig"; sourceTree = "<group>"; };
 		685435307DECEAC5C6933D36 /* Pods-iHealthDemoCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealthDemoCode.debug.xcconfig"; path = "Target Support Files/Pods-iHealthDemoCode/Pods-iHealthDemoCode.debug.xcconfig"; sourceTree = "<group>"; };
-		B37B806A2003189B00BE2E5B /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
-		EC29B8E520088532007E912B /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		EC3112FB1F7A02A8003A08FE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		EC3112FF1F7A02A8003A08FE /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		EC7231A01F29F770007AD9F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -381,8 +360,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458874732AA866170046E22C /* libc++.1.tbd in Frameworks */,
 				45EE0F5C2AA80B5400CEF601 /* iHealthSDK2.10.0.a in Frameworks */,
-				18DA00972019BB9D00FCF5DB /* libc++.1.tbd in Frameworks */,
 				1719EBB186EB8BCB7D15A318 /* Pods_iHealthDemoCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +383,6 @@
 		3F9531B729E5490500A4BFD8 /* SDKDemoBaseVC */ = {
 			isa = PBXGroup;
 			children = (
-				3F9531EA29E6A47E00A4BFD8 /* Font */,
 				3F9531B829E5499A00A4BFD8 /* IHSDKBaseController.h */,
 				3F9531B929E5499A00A4BFD8 /* IHSDKBaseController.m */,
 				3F9531C229E54D3300A4BFD8 /* IHSDKBaseNavVC.h */,
@@ -450,34 +428,15 @@
 			path = SDKDemoBaseUI;
 			sourceTree = "<group>";
 		};
-		3F9531EA29E6A47E00A4BFD8 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				3F9531EB29E6A47E00A4BFD8 /* TTNormsPro-ExtraBlack.otf */,
-				3F9531EC29E6A47E00A4BFD8 /* TTNormsPro-Regular.otf */,
-				3F9531ED29E6A47E00A4BFD8 /* TTNormsPro-ExtraBold.otf */,
-				3F9531EE29E6A47E00A4BFD8 /* TTNormsPro-Black.otf */,
-				3F9531EF29E6A47E00A4BFD8 /* TTNormsPro-Normal.otf */,
-				3F9531F029E6A47E00A4BFD8 /* TTNormsPro-DemiBold.otf */,
-				3F9531F129E6A47E00A4BFD8 /* TTNormsPro-Medium.otf */,
-				3F9531F229E6A47E00A4BFD8 /* TT Norms Pro Medium.ttf */,
-				3F9531F329E6A47E00A4BFD8 /* TTNormsPro-Bold.otf */,
-				3F9531F429E6A47E00A4BFD8 /* TTNormsPro-Light.otf */,
-				3F9531F529E6A47E00A4BFD8 /* TTNormsPro-Thin.otf */,
-				3F9531F629E6A47E00A4BFD8 /* TTNormsPro-ExtraLight.otf */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
 		3F95320329E6AB3100A4BFD8 /* iHealthDeviceVC */ = {
 			isa = PBXGroup;
 			children = (
 				3F95320729E6AE5B00A4BFD8 /* IHSDKDeviceList.h */,
 				3F95320829E6AE5B00A4BFD8 /* IHSDKDeviceList.m */,
+				45A8702B2AA87DC700C2A284 /* HS */,
+				45A870222AA8754500C2A284 /* PO */,
+				45A870202AA8752A00C2A284 /* BP */,
 				45260DB42A935A9400E10533 /* BG */,
-				45F4E0652A83340600CBC224 /* PO1View */,
-				45A0E82A2A738959004B5DE6 /* PO3View */,
-				456527AA29F22E1600C7A9D7 /* KN550BTView */,
 				45B57E752A136D9D001EE953 /* AM5View */,
 				4565278829EE7AE900C7A9D7 /* AM6View */,
 			);
@@ -620,6 +579,50 @@
 				45A21F4B2A394B0300242D08 /* UILabel+WPKLabel.m */,
 			);
 			path = AM6SettingView;
+			sourceTree = "<group>";
+		};
+		45A870202AA8752A00C2A284 /* BP */ = {
+			isa = PBXGroup;
+			children = (
+				45A870242AA8768500C2A284 /* BP5S */,
+				45A870232AA8767800C2A284 /* BP3L */,
+				456527AA29F22E1600C7A9D7 /* KN550BTView */,
+			);
+			path = BP;
+			sourceTree = "<group>";
+		};
+		45A870222AA8754500C2A284 /* PO */ = {
+			isa = PBXGroup;
+			children = (
+				45F4E0652A83340600CBC224 /* PO1View */,
+				45A0E82A2A738959004B5DE6 /* PO3View */,
+			);
+			path = PO;
+			sourceTree = "<group>";
+		};
+		45A870232AA8767800C2A284 /* BP3L */ = {
+			isa = PBXGroup;
+			children = (
+				45A870252AA876A400C2A284 /* DeviceBP3LVC.h */,
+				45A870262AA876A400C2A284 /* DeviceBP3LVC.m */,
+			);
+			path = BP3L;
+			sourceTree = "<group>";
+		};
+		45A870242AA8768500C2A284 /* BP5S */ = {
+			isa = PBXGroup;
+			children = (
+				45A870282AA876BC00C2A284 /* DeviceBP5SVC.h */,
+				45A870292AA876BC00C2A284 /* DeviceBP5SVC.m */,
+			);
+			path = BP5S;
+			sourceTree = "<group>";
+		};
+		45A8702B2AA87DC700C2A284 /* HS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HS;
 			sourceTree = "<group>";
 		};
 		45B57E752A136D9D001EE953 /* AM5View */ = {
@@ -815,10 +818,8 @@
 			isa = PBXGroup;
 			children = (
 				4D48B74419D0F40D00BA5A84 /* iHealthDemoCode */,
-				4D48B76619D0F40D00BA5A84 /* iHealthDemoCodeTests */,
 				4D48B73D19D0F40D00BA5A84 /* Frameworks */,
 				4D48B73C19D0F40D00BA5A84 /* Products */,
-				B3E78B1C20197CB900EB9F0A /* Recovered References */,
 				889AA1083366C15DE894FF3D /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -834,8 +835,10 @@
 		4D48B73D19D0F40D00BA5A84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				458874782AA8677E0046E22C /* MJExtension.framework */,
+				458874742AA8676C0046E22C /* Masonry.framework */,
+				458874722AA866170046E22C /* libc++.1.tbd */,
 				ECF4740D204F60F400493F15 /* libcompression.tbd */,
-				B37B806A2003189B00BE2E5B /* libc++.1.dylib */,
 				EC3112FF1F7A02A8003A08FE /* UserNotifications.framework */,
 				EC3112FB1F7A02A8003A08FE /* UserNotificationsUI.framework */,
 				EC7231A51F29F777007AD9F9 /* CFNetwork.framework */,
@@ -847,7 +850,6 @@
 				4D48B7A719D0FA8B00BA5A84 /* CoreBluetooth.framework */,
 				4D48B73E19D0F40D00BA5A84 /* Foundation.framework */,
 				4D48B74219D0F40D00BA5A84 /* UIKit.framework */,
-				4D48B76019D0F40D00BA5A84 /* XCTest.framework */,
 				1D39B4E1DDBF63046F19A5B4 /* Pods_iHealthDemoCode.framework */,
 			);
 			name = Frameworks;
@@ -881,24 +883,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4D48B76619D0F40D00BA5A84 /* iHealthDemoCodeTests */ = {
-			isa = PBXGroup;
-			children = (
-				4D48B76C19D0F40D00BA5A84 /* iHealthDemoCodeTests.m */,
-				4D48B76719D0F40D00BA5A84 /* Supporting Files */,
-			);
-			path = iHealthDemoCodeTests;
-			sourceTree = "<group>";
-		};
-		4D48B76719D0F40D00BA5A84 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D48B76819D0F40D00BA5A84 /* iHealthDemoCodeTests-Info.plist */,
-				4D48B76919D0F40D00BA5A84 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		889AA1083366C15DE894FF3D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -906,14 +890,6 @@
 				5DCA751339503DDA9BABF2F9 /* Pods-iHealthDemoCode.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B3E78B1C20197CB900EB9F0A /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				EC29B8E520088532007E912B /* libc++.1.tbd */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -984,22 +960,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9531FC29E6A47E00A4BFD8 /* TTNormsPro-DemiBold.otf in Resources */,
 				189BBC7F1E9490A00098589E /* InfoPlist.strings in Resources */,
 				45A21F4A2A394A2700242D08 /* AM6Image.xcassets in Resources */,
-				3F9531FE29E6A47E00A4BFD8 /* TT Norms Pro Medium.ttf in Resources */,
-				3F9531F929E6A47E00A4BFD8 /* TTNormsPro-ExtraBold.otf in Resources */,
 				4D48B75A19D0F40D00BA5A84 /* Images.xcassets in Resources */,
-				3F9531F729E6A47E00A4BFD8 /* TTNormsPro-ExtraBlack.otf in Resources */,
-				3F9531FA29E6A47E00A4BFD8 /* TTNormsPro-Black.otf in Resources */,
-				3F9531FF29E6A47E00A4BFD8 /* TTNormsPro-Bold.otf in Resources */,
-				3F9531FB29E6A47E00A4BFD8 /* TTNormsPro-Normal.otf in Resources */,
 				458EEA2C2A4ADA590088D253 /* FindPhoneAudio.mp3 in Resources */,
-				3F95320229E6A47E00A4BFD8 /* TTNormsPro-ExtraLight.otf in Resources */,
-				3F9531FD29E6A47E00A4BFD8 /* TTNormsPro-Medium.otf in Resources */,
-				3F9531F829E6A47E00A4BFD8 /* TTNormsPro-Regular.otf in Resources */,
-				3F95320029E6A47E00A4BFD8 /* TTNormsPro-Light.otf in Resources */,
-				3F95320129E6A47E00A4BFD8 /* TTNormsPro-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,7 +1046,9 @@
 				3F9531C429E54D3400A4BFD8 /* IHSDKBaseNavVC.m in Sources */,
 				3F9531CA29E54FD800A4BFD8 /* IHSDKTipsView.m in Sources */,
 				45542EC72A862E9D00F7BD39 /* DeviceBG1AVC.m in Sources */,
+				45A8702A2AA876BC00C2A284 /* DeviceBP5SVC.m in Sources */,
 				4565279129EE7DFB00C7A9D7 /* DeviceAM6DataVC.m in Sources */,
+				45A870272AA876A400C2A284 /* DeviceBP3LVC.m in Sources */,
 				45F4E0682A83351300CBC224 /* DevicePO1VC.m in Sources */,
 				3F9531BA29E5499A00A4BFD8 /* IHSDKBaseController.m in Sources */,
 				3F9531E629E566A700A4BFD8 /* IHSDKDemoRoundCornerButton.m in Sources */,
@@ -1127,14 +1093,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				189BBC7E1E9490A00098589E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4D48B76919D0F40D00BA5A84 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D48B76A19D0F40D00BA5A84 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

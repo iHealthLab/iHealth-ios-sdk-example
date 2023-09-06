@@ -24,6 +24,8 @@
 #import "DeviceBG1AVC.h"
 #import "DeviceBG1VC.h"
 #import "DeviceBG1SVC.h"
+#import "DeviceBP5SVC.h"
+#import "DeviceBP3LVC.h"
 
 /* Notification */
 #define kiHealthSDKAddNoti(obj,notiName,sel) [NSNotificationCenter.defaultCenter addObserver:obj selector:(sel) name:(notiName) object:nil]
@@ -62,6 +64,15 @@
             
             [KN550BTController shareKN550BTController];
             break;
+        case HealthDeviceType_BP5S:
+
+            kiHealthSDKAddNoti(self, BP5SDiscover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, BP5SConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, BP5SConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, BP5SDisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [BP5SController sharedController];
+            break;
         case HealthDeviceType_BG5S:
 
             kiHealthSDKAddNoti(self, kNotificationNameBG5SDidDiscover, @selector(DeviceDiscover:));
@@ -79,15 +90,6 @@
             kiHealthSDKAddNoti(self, BG1ADisConnectNoti, @selector(DeviceDisConnect:));
             
             [BG1AController shareIHBG1AController];
-            break;
-        case HealthDeviceType_AM5:
-
-            kiHealthSDKAddNoti(self, AM5Discover, @selector(DeviceDiscover:));
-            kiHealthSDKAddNoti(self, AM5ConnectNoti, @selector(DeviceConnect:));
-            kiHealthSDKAddNoti(self, AM5ConnectFailed, @selector(DeviceConnectFail:));
-            kiHealthSDKAddNoti(self, AM5DisConnectNoti, @selector(DeviceDisConnect:));
-            
-            [AM5Controller shareAM5Controller];
             break;
         case HealthDeviceType_PO3:
 
@@ -132,6 +134,15 @@
             kiHealthSDKAddNoti(self, BG1SDisConnectNoti, @selector(DeviceDisConnect:));
             
             [BG1SController shareIHBG1SController];
+            break;
+        case HealthDeviceType_BP3L:
+
+            kiHealthSDKAddNoti(self, BP3LDiscover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, BP3LConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, BP3LConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, BP3LDisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [BP3LController shareBP3LController];
             break;
         default:
             break;
@@ -193,8 +204,8 @@
                 DeviceKN550BTVC *vc = [DeviceKN550BTVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
-            }else if ([deviceName containsString:@"AM5"]) {
-                DeviceAM5VC *vc = [DeviceAM5VC new];
+            }else if ([deviceName containsString:@"BP5S"] ||[deviceName containsString:@"BP5C"]) {
+                DeviceBP5SVC *vc = [DeviceBP5SVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
             }else if ([deviceName containsString:@"BG5S"]) {
@@ -215,6 +226,10 @@
                 [self.navigationController pushViewController:vc animated:YES];
             }else if ([deviceName containsString:@"BG1S"]) {
                 DeviceBG1SVC *vc = [DeviceBG1SVC new];
+                vc.deviceId = deviceId;
+                [self.navigationController pushViewController:vc animated:YES];
+            }else if ([deviceName containsString:@"BP3L"]) {
+                DeviceBP3LVC *vc = [DeviceBP3LVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
             }

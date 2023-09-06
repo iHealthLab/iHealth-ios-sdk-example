@@ -17,7 +17,7 @@ UIFont * IHSDKFontDefault(double size)
 #pragma mark - 常规
 UIFont * IHSDKFontRegularStyle1(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-Regular" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -27,7 +27,7 @@ UIFont * IHSDKFontRegularStyle1(double size)
 */
 UIFont * IHSDKFontRegularStyle2(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-Normal" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -37,7 +37,9 @@ UIFont * IHSDKFontRegularStyle2(double size)
 */
 UIFont * IHSDKFontRegularStyle3(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-Medium" size:size];
+    
+    return [UIFont systemFontOfSize:size];
+
 }
 
 /**
@@ -47,7 +49,7 @@ UIFont * IHSDKFontRegularStyle3(double size)
 */
 UIFont * IHSDKFontRegularStyle4(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-Light" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -57,7 +59,7 @@ UIFont * IHSDKFontRegularStyle4(double size)
 */
 UIFont * IHSDKFontRegularStyle5(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-Thin" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -67,7 +69,7 @@ UIFont * IHSDKFontRegularStyle5(double size)
 */
 UIFont * IHSDKFontRegularStyle6(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-Black" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -77,7 +79,7 @@ UIFont * IHSDKFontRegularStyle6(double size)
 */
 UIFont * IHSDKFontRegularStyle7(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-ExtraBlack" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -87,7 +89,7 @@ UIFont * IHSDKFontRegularStyle7(double size)
 */
 UIFont * IHSDKFontRegularStyle8(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-ExtraLight" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 
@@ -99,7 +101,7 @@ UIFont * IHSDKFontRegularStyle8(double size)
 */
 UIFont * IHSDKFontBoldStyle1(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-Bold" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -109,7 +111,7 @@ UIFont * IHSDKFontBoldStyle1(double size)
 */
 UIFont * IHSDKFontBoldStyle2(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-DemiBold" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -119,7 +121,7 @@ UIFont * IHSDKFontBoldStyle2(double size)
  */
 UIFont * IHSDKFontBoldStyle3(double size)
 {
-    return [UIFont fontWithName:@"TTNormsPro-ExtraBold" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 
@@ -130,7 +132,7 @@ UIFont * IHSDKFontBoldStyle3(double size)
  */
 UIFont * IHSDKFontPluginStyle1(double size)
 {
-    return [UIFont fontWithName:@"Bebas" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -140,7 +142,7 @@ UIFont * IHSDKFontPluginStyle1(double size)
  */
 UIFont * IHSDKFontPluginStyle2(double size)
 {
-    return [UIFont fontWithName:@"Facon" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 
 /**
@@ -150,6 +152,6 @@ UIFont * IHSDKFontPluginStyle2(double size)
 */
 UIFont * IHSDKFontPluginStyle3(double size)
 {
-    return [UIFont fontWithName:@"LouisGeorgeCafe-Bold" size:size];
+    return [UIFont systemFontOfSize:size];
 }
 

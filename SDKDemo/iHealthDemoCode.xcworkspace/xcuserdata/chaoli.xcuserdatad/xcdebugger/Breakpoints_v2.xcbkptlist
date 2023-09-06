@@ -20,33 +20,33 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "F306DFD9-2505-4C43-8FE2-7524BCF0E761 - 216dc6c55da41aa0"
+                  uuid = "F306DFD9-2505-4C43-8FE2-7524BCF0E761 - 8078d069c3f3a2e4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[DeviceAM6AlarmVC onClickSwitch:]"
                   moduleName = "iHealthDemoCode"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chaoli/Desktop/git/iHealthSDK_iOS/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
+                  urlString = "file:///Users/chaoli/Desktop/git/iHealth-ios-sdk-example/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "260"
-                  endingLineNumber = "260"
+                  startingLineNumber = "258"
+                  endingLineNumber = "258"
                   offsetFromSymbolStart = "516">
                </Location>
                <Location
-                  uuid = "F306DFD9-2505-4C43-8FE2-7524BCF0E761 - f3f113b628bf10ca"
+                  uuid = "F306DFD9-2505-4C43-8FE2-7524BCF0E761 - 52e4051ab6e8a88e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__34-[DeviceAM6AlarmVC onClickSwitch:]_block_invoke"
                   moduleName = "iHealthDemoCode"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chaoli/Desktop/git/iHealthSDK_iOS/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
+                  urlString = "file:///Users/chaoli/Desktop/git/iHealth-ios-sdk-example/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "261"
-                  endingLineNumber = "261"
+                  startingLineNumber = "259"
+                  endingLineNumber = "259"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -68,33 +68,33 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6FF8A7E7-0586-4C03-AF64-58894662B210 - 767856e86beb0204"
+                  uuid = "6FF8A7E7-0586-4C03-AF64-58894662B210 - d76d4044f5bcabd0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[DeviceAM6AlarmVC tableView:commitEditingStyle:forRowAtIndexPath:]"
                   moduleName = "iHealthDemoCode"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chaoli/Desktop/git/iHealthSDK_iOS/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
+                  urlString = "file:///Users/chaoli/Desktop/git/iHealth-ios-sdk-example/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "374"
-                  endingLineNumber = "374"
+                  startingLineNumber = "364"
+                  endingLineNumber = "364"
                   offsetFromSymbolStart = "244">
                </Location>
                <Location
-                  uuid = "6FF8A7E7-0586-4C03-AF64-58894662B210 - 889f5f38104df587"
+                  uuid = "6FF8A7E7-0586-4C03-AF64-58894662B210 - 298a49948e1a5cd3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__67-[DeviceAM6AlarmVC tableView:commitEditingStyle:forRowAtIndexPath:]_block_invoke"
                   moduleName = "iHealthDemoCode"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chaoli/Desktop/git/iHealthSDK_iOS/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
+                  urlString = "file:///Users/chaoli/Desktop/git/iHealth-ios-sdk-example/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "376"
-                  endingLineNumber = "376"
+                  startingLineNumber = "366"
+                  endingLineNumber = "366"
                   offsetFromSymbolStart = "24">
                </Location>
             </Locations>
@@ -116,84 +116,36 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "59D47B61-16C7-4B9F-876D-F6AF9F65344C - dc45e377e9694f61"
+                  uuid = "59D47B61-16C7-4B9F-876D-F6AF9F65344C - 7d50f5db773ed7b5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__54-[DeviceAM6AlarmVC tableView:didSelectRowAtIndexPath:]_block_invoke"
                   moduleName = "iHealthDemoCode"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chaoli/Desktop/git/iHealthSDK_iOS/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
+                  urlString = "file:///Users/chaoli/Desktop/git/iHealth-ios-sdk-example/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "409"
-                  endingLineNumber = "409"
+                  startingLineNumber = "399"
+                  endingLineNumber = "399"
                   offsetFromSymbolStart = "404">
                </Location>
                <Location
-                  uuid = "59D47B61-16C7-4B9F-876D-F6AF9F65344C - d4b468b6799b12d4"
+                  uuid = "59D47B61-16C7-4B9F-876D-F6AF9F65344C - 75a17e1ae7cc8d88"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__54-[DeviceAM6AlarmVC tableView:didSelectRowAtIndexPath:]_block_invoke_2"
                   moduleName = "iHealthDemoCode"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chaoli/Desktop/git/iHealthSDK_iOS/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
+                  urlString = "file:///Users/chaoli/Desktop/git/iHealth-ios-sdk-example/SDKDemo/iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/AM6View/AM6Alarm/DeviceAM6AlarmVC.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "411"
-                  endingLineNumber = "411"
+                  startingLineNumber = "401"
+                  endingLineNumber = "401"
                   offsetFromSymbolStart = "24">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "81687434-908E-4D77-8F40-BEBC7F3C1B17"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BGDemo/BG1A/BG1AHomageVC.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "341"
-            endingLineNumber = "341"
-            landmarkName = "-handleResultNoti:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B2AA76D8-6114-4D8C-B204-6C2C9CAD5701"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../iHealthDeviceSDK/Classes/CommonMethod/SDKCloudTool.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "734"
-            endingLineNumber = "734"
-            landmarkName = "-commandUpdateSDKLicenseINfo"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "14B54C33-A868-49BD-8852-5D662C6C4430"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../iHealthDeviceSDK/Classes/Public/ConnectModel/ScanDeviceController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "587"
-            endingLineNumber = "587"
-            landmarkName = "-bluetoothManager:allDevices:otaDevices:"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -293,54 +245,6 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "71258734-1409-4DE7-88B5-F188A7A84F87"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BG1ADemo/BG1ATool/BG1AResultTools.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "+readDataFromFile"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2B3FBDAA-1D1B-480E-BF5B-68B83889A36D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BG1ADemo/BG1ATool/BG1AResultTools.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "+readDataFromFile"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "195373DA-8830-475C-B4BB-E9ECC4A9165D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BG1ADemo/BG1ATool/BG1AResultTools.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "+saveToFile::"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             uuid = "3A1D1FE2-91F0-41B0-A76D-D80D223C76AF"
@@ -371,22 +275,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E548F6BC-5097-4F57-B1A1-7F3372A8711B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BG1ADemo/BG1AMeasureView/IHSDKBG1ASearchVC.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "-clickleftBarButtonItem"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B8FAE602-1948-429F-9CE7-729E53A88A80"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -398,22 +286,6 @@
             endingLineNumber = "169"
             landmarkName = "-loadItems"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5084704E-16B9-4989-AC1D-301B14D89676"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../iHealthDeviceSDK/Classes/CommonMethod/SDKCloudTool.h"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-uploadHSDeviceData:mac:type:"
-            landmarkType = "6">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -445,118 +317,6 @@
             startingLineNumber = "100"
             endingLineNumber = "100"
             landmarkName = "-rightBarButtonDidPressed:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "21C35EE3-A795-46E3-834C-68F889A91A1D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../iHealthDeviceSDK/Classes/Public/POModel/PO3.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "933"
-            endingLineNumber = "933"
-            landmarkName = "-commandPO3GetDeviceTime:withErrorBlock:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "21C35EE3-A795-46E3-834C-68F889A91A1D - 94e6c090b37448a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PO3 commandPO3GetDeviceTime:withErrorBlock:]"
-                  moduleName = "iHealthDemoCode"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chaoli/Desktop/git/iHealthSDK_iOS/iHealthDeviceSDK/Classes/Public/POModel/PO3.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "933"
-                  endingLineNumber = "933"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "21C35EE3-A795-46E3-834C-68F889A91A1D - c8feaba44c0790b6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__46-[PO3 commandPO3GetDeviceTime:withErrorBlock:]_block_invoke"
-                  moduleName = "iHealthDemoCode"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/usr/include/dispatch/queue.h"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "590"
-                  endingLineNumber = "590"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "591DD063-7881-45CC-95DD-79032ADB723B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../iHealthDeviceSDK/Classes/Public/POModel/PO3.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "926"
-            endingLineNumber = "926"
-            landmarkName = "-commandPO3GetDeviceTime:withErrorBlock:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C87E3094-E348-4EDB-ABB3-2A7D6DCFB385"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iHealthDemoCode/iHealthSDKDemoView/iHealthDeviceVC/PO/PO3View/DevicePO3VC.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
-            landmarkName = "-loadItems"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EC737FE3-2C2E-42ED-8C30-B4EC7906AE8C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../iHealthDeviceSDK/Classes/Public/POModel/PO3.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "-commandCreatePO3DataCacheAction:timeOut:cacheblock:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3529B1BB-E0CF-49CE-81B1-445878E6C805"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../iHealthDeviceSDK/Classes/Public/POModel/PO3.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "-sendPO3CacheCommand"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

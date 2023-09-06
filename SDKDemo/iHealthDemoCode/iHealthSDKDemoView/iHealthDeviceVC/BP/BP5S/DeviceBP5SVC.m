@@ -1,34 +1,34 @@
 //
-//  DeviceKN-550BTVC.m
+//  DeviceBP5SVC.m
 //  iHealthDemoCode
 //
-//  Created by jing on 2023/4/12.
+//  Created by Spring on 2023/9/6.
 //  Copyright © 2023 iHealth Demo Code. All rights reserved.
 //
 
-#import "DeviceKN550BTVC.h"
+#import "DeviceBP5SVC.h"
 #import "IHSDKDemoTableView.h"
 #import "BPHeader.h"
 #import "ScanDeviceController.h"
-@interface DeviceKN550BTVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface DeviceBP5SVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSMutableSet *mArr;
 @property (strong, nonatomic) NSMutableArray *items;
 @property (strong, nonatomic) IHSDKDemoTableView *myTable;
 @property (copy, nonatomic) NSString *selectedDeviceId;
 @property (strong, nonatomic) UITextView *myTextView;
-@property (strong, nonatomic) KN550BT *device;
+@property (strong, nonatomic) BP5S *device;
 
 @end
 
-@implementation DeviceKN550BTVC
+@implementation DeviceBP5SVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSArray*deviceArray=[[KN550BTController shareKN550BTController] getAllCurrentKN550BTInstace];
+    NSArray*deviceArray=[[BP5SController sharedController] getAllCurrentInstance];
     
-    for(KN550BT *device in deviceArray){
+    for(BP5S *device in deviceArray){
         
         if([self.deviceId isEqualToString:device.serialNumber]){
             
@@ -44,12 +44,12 @@
         [self.navigationController popViewControllerAnimated:YES];
     }
     
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(DeviceDisConnectForKN550BT:) name:KN550BTDisConnectNoti object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(DeviceDisConnectForBP5S:) name:BP5SDisConnectNoti object:nil];
 }
--(void)DeviceDisConnectForKN550BT:(NSNotification*)info {
+-(void)DeviceDisConnectForBP5S:(NSNotification*)info {
     
     
-    NSLog(@"KN550BTDisConnectNoti:%@",[info userInfo]);
+    NSLog(@"BP5SDisConnectNoti:%@",[info userInfo]);
     
 }
 
@@ -119,7 +119,7 @@
             
             [weakSelf hideLoading];
             
-            [IHSDKDemoToast showTipWithTitle:[self BP550Error:error]];
+            [IHSDKDemoToast showTipWithTitle:[self BPError:error]];
             
         }];
 
@@ -139,7 +139,7 @@
             
             [weakSelf hideLoading];
             
-            [IHSDKDemoToast showTipWithTitle:[self BP550Error:error]];
+            [IHSDKDemoToast showTipWithTitle:[self BPError:error]];
             
         }];
         
@@ -174,9 +174,84 @@
             
             NSLog(@"timeout:%lu",(unsigned long)error);
             
-            [IHSDKDemoToast showTipWithTitle:[self BP550Error:error]];
+            [IHSDKDemoToast showTipWithTitle:[self BPError:error]];
+        }];
+    }}];
+    
+    [self.items addObject:@{@"t":@"Measure",@"cb":^{
+        [weakSelf showLoading];
+        
+        [self.device commandStartMeasureWithZeroingState:^(BOOL isComplete) {
+            
+        } pressure:^(NSArray *pressureArr) {
+            
+        } waveletWithHeartbeat:^(NSArray *waveletArr) {
+            
+        } waveletWithoutHeartbeat:^(NSArray *waveletArr) {
+            
+        } result:^(NSDictionary *resultDict) {
+            
+            [weakSelf hideLoading];
+            
+            NSString *str = [NSString stringWithFormat:@"Result:%@",resultDict];
+            
+            [weakSelf printLog:str];
+            
+            [IHSDKDemoToast showTipWithTitle:str];
+            
+        } errorBlock:^(BPDeviceError error) {
+            
+            [weakSelf hideLoading];
+            
+            NSLog(@"timeout:%lu",(unsigned long)error);
+            
+            [IHSDKDemoToast showTipWithTitle:[self BPError:error]];
         }];
         
+    }}];
+    
+    [self.items addObject:@{@"t":@"Stop Measure",@"cb":^{
+        [weakSelf showLoading];
+        
+        [self.device stopBPMeassureSuccessBlock:^{
+            
+            [weakSelf hideLoading];
+            
+            [IHSDKDemoToast showTipWithTitle:@"Stop Measure"];
+            
+        } errorBlock:^(BPDeviceError error) {
+            
+            [weakSelf hideLoading];
+            
+            [IHSDKDemoToast showTipWithTitle:[self BPError:error]];
+        }];
+        
+    }}];
+    
+    [self.items addObject:@{@"t":@"Set unit",@"cb":^{
+        
+        
+        [self.device commandSetUnit:@"mmHg" disposeSetReslut:^{
+            
+            [weakSelf hideLoading];
+            
+            [IHSDKDemoToast showTipWithTitle:@"Set Sucess"];
+            
+        } errorBlock:^(BPDeviceError error) {
+            
+            [weakSelf hideLoading];
+            
+            [IHSDKDemoToast showTipWithTitle:[self BPError:error]];
+            
+        }];
+        
+    }}];
+    
+    
+    [self.items addObject:@{@"t":@"Disconnect",@"cb":^{
+        
+        
+        [self.device commandDisconnectDevice];
         
     }}];
     
@@ -203,7 +278,7 @@
     }
 }
 
--(NSString*)BP550Error:(BPDeviceError)errorID{
+-(NSString*)BPError:(BPDeviceError)errorID{
     
     switch (errorID) {
         case BPError0:
@@ -291,14 +366,5 @@
     
     return @"Unknow error";
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

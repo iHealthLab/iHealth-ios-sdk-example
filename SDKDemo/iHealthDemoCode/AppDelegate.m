@@ -21,25 +21,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-//    registrationServices().outputSdkLog(YES).outputProtocolLog(YES);
-
-    // Override point for customization after application launch.
-//    UIDevice *device = [UIDevice currentDevice];
-//    if (![[device model]isEqualToString:@"iPad Simulator"]) {
-        // 开始保存日志文件
-//        [self redirectNSlogToDocumentFolder];
-//    }
-    
-//    [ScanDeviceController commandGetInstance];
-    
-    
-//    NSString *aPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"20160229184312.dat"];
-//    NSString *bPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"20160229184312.txt"];
-//    NSLog(@"aPath:%@ \nbPath:%@",aPath,bPath);
-//    [[ECG3Filter sharedInstance] filterWithAFilePath:aPath bFilePath:bPath finishBlock:^(NSDictionary *resultDic) {
-//        NSLog(@"滤波完成：%@",resultDic);
-//
-//    }];
     [[IHDeviceSDKLog sharedInstance]enableLog];
     [IHDeviceSDKLog sharedInstance].delegate = self;
     
@@ -52,20 +33,6 @@
     return YES;
 }
 
-- (void)redirectNSlogToDocumentFolder
-{
-    NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-    NSString *documentDirectory = [paths objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"dr.log"];//注意不是NSData!
-    NSString *logFilePath = [documentDirectory stringByAppendingPathComponent:fileName];
-    //先删除已经存在的文件
-    NSFileManager *defaultManager = [NSFileManager defaultManager];
-    [defaultManager removeItemAtPath:logFilePath error:nil];
-    
-    // 将log输入到文件
-    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding],"a+", stdout);
-    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding],"a+", stderr);
-}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
