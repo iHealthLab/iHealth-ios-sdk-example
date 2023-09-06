@@ -1,0 +1,6 @@
+framework module Pods_iHealthDemoCode {
+  umbrella header "Pods-iHealthDemoCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

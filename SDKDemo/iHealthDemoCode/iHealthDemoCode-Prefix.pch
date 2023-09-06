@@ -1,0 +1,74 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #define SDKUploadLog
+    #define SDKCommandLog
+    #define TestCodeLog
+
+#endif
+
+#define INFO_LOG_SWITCH 1
+
+#if INFO_LOG_SWITCH && DEBUG
+#define INFOLog(...) NSLog(__VA_ARGS__)
+#else
+#define INFOLog(...)
+#endif
+
+#ifdef DEBUG
+#define DLog(...) NSLog(__VA_ARGS__)
+#define DMethod() NSLog(@"%s", __func__)
+#else
+#define DLog(...)
+#define DMethod()
+#endif
+#define ELog(...) NSLog(__VA_ARGS__)
+
+//#define SDKKey  @"2a8387e3f4e94407a3a767a72dfd52ea"
+//#define SDKSecret  @"fd5e845c47944a818bc511fb7edb0a77"
+//#define YourUserName @"heds@12.com"
+
+//#define SDKKey  @"e33d489fdd6d4961a33c4065f7cedb30"
+//#define SDKSecret  @"17075697306e4930b87beffc58ceb2a4"
+//#define YourUserName @"dai@12.com"
+
+#define SDKKey  @"2a8387e3f4e94407a3a767a72dfd52ea"
+#define SDKSecret  @"fd5e845c47944a818bc511fb7edb0a77"
+#define YourUserName @"cxx@zz.com"
+
+//
+//#define SDKKey  @"708bde5b65884f8d9e579e33e66e8e80"
+//#define SDKSecret  @"38ff62374a0d4aacadaf0e4fb4ed1931"
+//#define YourUserName @"jing@q.aaa"
+
+
+#import "IHSDKBaseNavVC.h"
+
+#import "Masonry.h"
+
+#import "IHSDKDemoUIHeader.h"
+
+#import "IHSDKDemoToast.h"
+
+
+#define CTScreen_W  [UIScreen mainScreen].bounds.size.width
+#define CTScaleByWidth(x) ((x) * (CTScreen_W/375.0))
+
+#define IDPS_Name                  @"DeviceName"
+#define IDPS_SerialNumber          @"SerialNumber"
+#define IHSDKDeviceRSSI            @"RSSI"
+
+
+
