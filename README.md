@@ -44,14 +44,19 @@ iHealthSDK2.10.0.a
 Add 2 new Item in‘Supported external accessory protocols’,Different products need to add different
 protocols.
 If you use these devices, please contact us before submitting the Apple Store. We will generate a ppid based on the information you provided to help your app pass the review. If you do not have ppid, you may be rejected during the review.
+
 If you're using BG5, you need to add
 protocol:com.jiuan.BGV31
+
 If you're using BP3, you need to add
 protocol:com.jiuan.P930
+
 If you're using BP5 or BP7, you need to add
 protocol:com.jiuan.BPV20、com.jiuan.BPV23
+
 If you're using ABI, you need to add
 protocol:com.jiuan.BPV21
+
 If you're using HS3, you need to add
 protocol:com.ihealth.sc221
 
