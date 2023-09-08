@@ -34,9 +34,13 @@ THV3 、TS28B 、NT13B、PT3SBT
 IHSDKCloudUser.h
 ### Library:
 iHealthSDK2.10.0.a
+
 1、supports iOS 9.0 and above. 
+
 2、Frameworks
+
 3、Configuration
+
 Add 2 new Item in‘Supported external accessory protocols’,Different products need to add different
 protocols.
 If you use these devices, please contact us before submitting the Apple Store. We will generate a ppid based on the information you provided to help your app pass the review. If you do not have ppid, you may be rejected during the review.
