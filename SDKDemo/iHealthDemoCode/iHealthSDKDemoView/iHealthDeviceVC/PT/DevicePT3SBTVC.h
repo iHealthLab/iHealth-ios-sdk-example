@@ -1,17 +1,19 @@
 //
-//  DeviceAM5VC.h
+//  DevicePT3SBTVC.h
 //  iHealthDemoCode
 //
-//  Created by Spring on 2023/5/16.
+//  Created by Spring on 2023/9/8.
 //  Copyright © 2023 iHealth Demo Code. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "IHSDKBaseNavVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DeviceAM5VC : IHSDKBaseNavVC
+@interface DevicePT3SBTVC : IHSDKBaseNavVC
+
 @property (copy, nonatomic) NSString *deviceId;
+
 @end
 
 NS_ASSUME_NONNULL_END

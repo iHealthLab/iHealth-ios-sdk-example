@@ -135,20 +135,94 @@
         [weakSelf showLoading];
         
         [self.device queryStateInfoWithSuccess:^(BG5SStateInfo *stateInfo) {
-            NSLog(@"综合查询成功：电量：%d",(int)stateInfo.batteryValue);
-            NSLog(@"综合查询成功：时间：%@",stateInfo.deviceDate);
-            NSLog(@"综合查询成功：时区：%f",stateInfo.deviceTimeZone);
-            NSLog(@"综合查询成功：试条使用条数：%d",(int)stateInfo.stripUsedValue);
-            NSLog(@"综合查询成功：离线数据条数：%d",(int)stateInfo.offlineDataQuantity);
-            NSLog(@"综合查询成功：血液Code版本号：%d",(int)stateInfo.bloodCodeVersion);
-            NSLog(@"综合查询成功：质控液Code版本号：%d",(int)stateInfo.ctlCodeVersion);
-            NSLog(@"综合查询成功：单位：%@",(stateInfo.unit == BGUnit_mmolPL)?@"mmol":((stateInfo.unit == BGUnit_mgPmL)?@"mg":@"未设置"));
+            NSLog(@"batteryValue：%d",(int)stateInfo.batteryValue);
+            NSLog(@"deviceDate：%@",stateInfo.deviceDate);
+            NSLog(@"deviceTimeZone：%f",stateInfo.deviceTimeZone);
+            NSLog(@"stripUsedValue：%d",(int)stateInfo.stripUsedValue);
+            NSLog(@"offlineDataQuantity：%d",(int)stateInfo.offlineDataQuantity);
+            NSLog(@"bloodCodeVersion：%d",(int)stateInfo.bloodCodeVersion);
+            NSLog(@"ctlCodeVersion：%d",(int)stateInfo.ctlCodeVersion);
+            NSLog(@"unit：%@",(stateInfo.unit == BGUnit_mmolPL)?@"mmol":((stateInfo.unit == BGUnit_mgPmL)?@"mg":@"No Set"));
             [weakSelf hideLoading];
+
+            [IHSDKDemoToast showTipWithTitle:@"Sucess"];
         } errorBlock:^(BG5SError error, NSString *detailInfo) {
+            [weakSelf hideLoading];
             NSLog(@"error：%d",(int)error);
         }];
         
     }}];
+    [self.items addObject:@{@"t":@"setTime",@"cb":^{
+        [weakSelf showLoading];
+        
+        [self.device setTimeWithDate:[NSDate date] timezone:8 successBlock:^{
+            
+            [weakSelf hideLoading];
+
+            [IHSDKDemoToast showTipWithTitle:@"Sucess"];
+            
+        } errorBlock:^(BG5SError error, NSString *detailInfo) {
+            [weakSelf hideLoading];
+            NSLog(@"error：%d",(int)error);
+        }];
+        
+    }}];
+    [self.items addObject:@{@"t":@"setUnit",@"cb":^{
+        [weakSelf showLoading];
+        
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Set Unit" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *kgAction = [UIAlertAction actionWithTitle:@"mmolPL" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+            [weakSelf.device setUnit:BGUnit_mmolPL successBlock:^{
+                [weakSelf hideLoading];
+
+                [IHSDKDemoToast showTipWithTitle:@"Sucess"];
+            } errorBlock:^(BG5SError error, NSString *detailInfo) {
+                [weakSelf hideLoading];
+                NSLog(@"error：%d",(int)error);
+            }];
+            
+        }];
+        UIAlertAction *lbAction = [UIAlertAction actionWithTitle:@"BGUnit_mgPmL" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+           
+            [weakSelf.device setUnit:BGUnit_mgPmL successBlock:^{
+                [weakSelf hideLoading];
+
+                [IHSDKDemoToast showTipWithTitle:@"Sucess"];
+            } errorBlock:^(BG5SError error, NSString *detailInfo) {
+                [weakSelf hideLoading];
+                NSLog(@"error：%d",(int)error);
+            }];
+            
+        }];
+       
+        [alertController addAction:kgAction];
+        [alertController addAction:lbAction];
+       
+        [self presentViewController:alertController animated:YES completion:nil];
+        
+
+        
+    }}];
+    
+    [self.items addObject:@{@"t":@"deleteStripUsedInfo",@"cb":^{
+        [weakSelf showLoading];
+        
+        [self.device deleteStripUsedInfoWithSuccessBlock:^{
+            
+            [weakSelf hideLoading];
+
+            [IHSDKDemoToast showTipWithTitle:@"Sucess"];
+            
+        } errorBlock:^(BG5SError error, NSString *detailInfo) {
+            [weakSelf hideLoading];
+            NSLog(@"error：%d",(int)error);
+        }];
+        
+    }}];
+    
+    
     [self.items addObject:@{@"t":@"Get Memory",@"cb":^{
         [weakSelf showLoading];
         
@@ -168,6 +242,22 @@
         
     }}];
     
+    [self.items addObject:@{@"t":@"deleteRecord",@"cb":^{
+        [weakSelf showLoading];
+        
+        [self.device deleteRecordWithSuccessBlock:^{
+            
+            [weakSelf hideLoading];
+
+            [IHSDKDemoToast showTipWithTitle:@"Sucess"];
+            
+        } errorBlock:^(BG5SError error, NSString *detailInfo) {
+            [weakSelf hideLoading];
+            NSLog(@"error：%d",(int)error);
+        }];
+        
+    }}];
+    
     [self.items addObject:@{@"t":@"Start Test",@"cb":^{
         [weakSelf showLoading];
         
@@ -180,6 +270,12 @@
             NSLog(@"error：%d",(int)error);
             
         }];
+        
+    }}];
+    
+    [self.items addObject:@{@"t":@"DisconnectDevice",@"cb":^{
+        
+        [weakSelf.device disconnectDevice];
         
     }}];
 }

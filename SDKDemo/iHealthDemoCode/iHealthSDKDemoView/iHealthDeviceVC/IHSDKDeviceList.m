@@ -13,11 +13,13 @@
 #import "AMMacroFile.h"
 #import "AMHeader.h"
 #import "POHeader.h"
+#import "HSHeader.h"
+#import "PT3SBTMacroFile.h"
+#import "PT3SBTController.h"
 #import "ScanDeviceController.h"
 #import "ConnectDeviceController.h"
 #import "DeviceAM6HomeVC.h"
 #import "DeviceKN550BTVC.h"
-#import "DeviceAM5VC.h"
 #import "DeviceBG5SVC.h"
 #import "DevicePO3VC.h"
 #import "DevicePO1VC.h"
@@ -26,6 +28,8 @@
 #import "DeviceBG1SVC.h"
 #import "DeviceBP5SVC.h"
 #import "DeviceBP3LVC.h"
+#import "DeviceHS2SVC.h"
+#import "DevicePT3SBTVC.h"
 
 /* Notification */
 #define kiHealthSDKAddNoti(obj,notiName,sel) [NSNotificationCenter.defaultCenter addObserver:obj selector:(sel) name:(notiName) object:nil]
@@ -144,6 +148,24 @@
             
             [BP3LController shareBP3LController];
             break;
+        case HealthDeviceType_HS2S:
+
+            kiHealthSDKAddNoti(self, HS2SDiscover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, HS2SConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, HS2SConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, HS2SDisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [BP3LController shareBP3LController];
+            break;
+        case HealthDeviceType_PT3SBT:
+
+            kiHealthSDKAddNoti(self, PT3SBTDiscover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, PT3SBTConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, PT3SBTConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, PT3SBTDisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [PT3SBTController shareIHPT3SBTController];
+            break;
         default:
             break;
     }
@@ -195,7 +217,6 @@
         if (self.selectedDeviceId && [self.selectedDeviceId isEqualToString:deviceId]) {
             [self showSuccessToastWithText:@"Connect Success"];
             
-            
             if ([deviceName isEqualToString:@"AM6"]) {
                 DeviceAM6HomeVC *vc = [DeviceAM6HomeVC new];
                 vc.deviceId = deviceId;
@@ -232,11 +253,16 @@
                 DeviceBP3LVC *vc = [DeviceBP3LVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
+            }else if ([deviceName containsString:@"HS2S"]) {
+                DeviceHS2SVC *vc = [DeviceHS2SVC new];
+                vc.deviceId = deviceId;
+                [self.navigationController pushViewController:vc animated:YES];
+            }else if ([deviceName containsString:@"PT3SBT"]) {
+                DevicePT3SBTVC *vc = [DevicePT3SBTVC new];
+                vc.deviceId = deviceId;
+                [self.navigationController pushViewController:vc animated:YES];
             }
-            
-//            DeviceHomeVC *vc = [DeviceHomeVC new];
-//            vc.deviceId = deviceId;
-//            [self.navigationController pushViewController:vc animated:YES];
+
         }
     }
 }

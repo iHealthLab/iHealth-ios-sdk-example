@@ -59,7 +59,8 @@
 		45A21F4D2A394B0400242D08 /* UILabel+WPKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A21F4B2A394B0300242D08 /* UILabel+WPKLabel.m */; };
 		45A870272AA876A400C2A284 /* DeviceBP3LVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A870262AA876A400C2A284 /* DeviceBP3LVC.m */; };
 		45A8702A2AA876BC00C2A284 /* DeviceBP5SVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A870292AA876BC00C2A284 /* DeviceBP5SVC.m */; };
-		45B57E782A136DD1001EE953 /* DeviceAM5VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B57E772A136DD1001EE953 /* DeviceAM5VC.m */; };
+		45A8702E2AA9C37700C2A284 /* DeviceHS2SVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8702D2AA9C37700C2A284 /* DeviceHS2SVC.m */; };
+		45A870322AAB074B00C2A284 /* DevicePT3SBTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A870312AAB074B00C2A284 /* DevicePT3SBTVC.m */; };
 		45EE0F5C2AA80B5400CEF601 /* iHealthSDK2.10.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE0F5B2AA80B5200CEF601 /* iHealthSDK2.10.0.a */; };
 		45F4E0682A83351300CBC224 /* DevicePO1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F4E0672A83351300CBC224 /* DevicePO1VC.m */; };
 		4D48B74B19D0F40D00BA5A84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D48B74A19D0F40D00BA5A84 /* main.m */; };
@@ -176,8 +177,10 @@
 		45A870262AA876A400C2A284 /* DeviceBP3LVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceBP3LVC.m; sourceTree = "<group>"; };
 		45A870282AA876BC00C2A284 /* DeviceBP5SVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceBP5SVC.h; sourceTree = "<group>"; };
 		45A870292AA876BC00C2A284 /* DeviceBP5SVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceBP5SVC.m; sourceTree = "<group>"; };
-		45B57E762A136DD1001EE953 /* DeviceAM5VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceAM5VC.h; sourceTree = "<group>"; };
-		45B57E772A136DD1001EE953 /* DeviceAM5VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceAM5VC.m; sourceTree = "<group>"; };
+		45A8702C2AA9C37700C2A284 /* DeviceHS2SVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceHS2SVC.h; sourceTree = "<group>"; };
+		45A8702D2AA9C37700C2A284 /* DeviceHS2SVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceHS2SVC.m; sourceTree = "<group>"; };
+		45A870302AAB074B00C2A284 /* DevicePT3SBTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicePT3SBTVC.h; sourceTree = "<group>"; };
+		45A870312AAB074B00C2A284 /* DevicePT3SBTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicePT3SBTVC.m; sourceTree = "<group>"; };
 		45EE0EC02AA80B5100CEF601 /* IDOSyncBpDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDOSyncBpDataModel.h; sourceTree = "<group>"; };
 		45EE0EC12AA80B5100CEF601 /* BPContinua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPContinua.h; sourceTree = "<group>"; };
 		45EE0EC22AA80B5100CEF601 /* IDOWeightBluetoothModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDOWeightBluetoothModel.h; sourceTree = "<group>"; };
@@ -433,11 +436,11 @@
 			children = (
 				3F95320729E6AE5B00A4BFD8 /* IHSDKDeviceList.h */,
 				3F95320829E6AE5B00A4BFD8 /* IHSDKDeviceList.m */,
+				45A8702F2AAB073300C2A284 /* PT */,
 				45A8702B2AA87DC700C2A284 /* HS */,
 				45A870222AA8754500C2A284 /* PO */,
 				45A870202AA8752A00C2A284 /* BP */,
 				45260DB42A935A9400E10533 /* BG */,
-				45B57E752A136D9D001EE953 /* AM5View */,
 				4565278829EE7AE900C7A9D7 /* AM6View */,
 			);
 			path = iHealthDeviceVC;
@@ -621,26 +624,28 @@
 		45A8702B2AA87DC700C2A284 /* HS */ = {
 			isa = PBXGroup;
 			children = (
+				45A8702C2AA9C37700C2A284 /* DeviceHS2SVC.h */,
+				45A8702D2AA9C37700C2A284 /* DeviceHS2SVC.m */,
 			);
 			path = HS;
 			sourceTree = "<group>";
 		};
-		45B57E752A136D9D001EE953 /* AM5View */ = {
+		45A8702F2AAB073300C2A284 /* PT */ = {
 			isa = PBXGroup;
 			children = (
-				45B57E762A136DD1001EE953 /* DeviceAM5VC.h */,
-				45B57E772A136DD1001EE953 /* DeviceAM5VC.m */,
+				45A870302AAB074B00C2A284 /* DevicePT3SBTVC.h */,
+				45A870312AAB074B00C2A284 /* DevicePT3SBTVC.m */,
 			);
-			path = AM5View;
+			path = PT;
 			sourceTree = "<group>";
 		};
-		45EE0EBE2AA80B5100CEF601 /* iHealthSDK2.10.0 */ = {
+		45EE0EBE2AA80B5100CEF601 /* iHealthSDK */ = {
 			isa = PBXGroup;
 			children = (
 				45EE0EBF2AA80B5100CEF601 /* Headers */,
 				45EE0F5B2AA80B5200CEF601 /* iHealthSDK2.10.0.a */,
 			);
-			path = iHealthSDK2.10.0;
+			path = iHealthSDK;
 			sourceTree = "<group>";
 		};
 		45EE0EBF2AA80B5100CEF601 /* Headers */ = {
@@ -861,7 +866,7 @@
 				18DC25F21E0CB0DD00301FFB /* iHealthDemoCode.entitlements */,
 				4D48B74D19D0F40D00BA5A84 /* AppDelegate.h */,
 				4D48B74E19D0F40D00BA5A84 /* AppDelegate.m */,
-				45EE0EBE2AA80B5100CEF601 /* iHealthSDK2.10.0 */,
+				45EE0EBE2AA80B5100CEF601 /* iHealthSDK */,
 				3F9531B029E547A400A4BFD8 /* iHealthSDKDemoView */,
 				4D48B75919D0F40D00BA5A84 /* Images.xcassets */,
 				45A21F492A394A2700242D08 /* AM6Image.xcassets */,
@@ -1036,6 +1041,7 @@
 				4565279429EE9A3600C7A9D7 /* DeviceAM6BindVC.m in Sources */,
 				45A21F482A38C1EC00242D08 /* WZLatteCaloriesPicker.m in Sources */,
 				3F9531E029E55E1700A4BFD8 /* IHSDKUITipsView.m in Sources */,
+				45A870322AAB074B00C2A284 /* DevicePT3SBTVC.m in Sources */,
 				45A21F182A3852BA00242D08 /* DeviceAM6AlarmVC.m in Sources */,
 				45A21F362A38BC8B00242D08 /* WPKDateIntervalView.m in Sources */,
 				45A21F3F2A38BDCB00242D08 /* UIView+WPKCorner.m in Sources */,
@@ -1075,8 +1081,8 @@
 				45A21F202A385BA500242D08 /* DeviceAM6AddAlarmVC.m in Sources */,
 				3F9531B629E5489200A4BFD8 /* SDKDemoHomeVC.m in Sources */,
 				45A21F2D2A38A94A00242D08 /* AM6SettingsItem.m in Sources */,
-				45B57E782A136DD1001EE953 /* DeviceAM5VC.m in Sources */,
 				45A21F422A38BEDC00242D08 /* NSString+WPKStringDrawing.m in Sources */,
+				45A8702E2AA9C37700C2A284 /* DeviceHS2SVC.m in Sources */,
 				4D48B74B19D0F40D00BA5A84 /* main.m in Sources */,
 				4557EEAE2A0B920F00F86787 /* DeviceAM6FindDeviceVC.m in Sources */,
 				45260DBC2A93626700E10533 /* DeviceBG1SVC.m in Sources */,
