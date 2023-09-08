@@ -54,12 +54,23 @@ If you're using ABI, you need to add
 protocol:com.jiuan.BPV21
 If you're using HS3, you need to add
 protocol:com.ihealth.sc221
-If you're using BG1，you need to add Item
-NSMicrophoneUsageDescription Add 1 new Item in
-‘Required background modes
-’
-: App communicates with an
-accessory、 App communicates using CoreBluetooth
+
 4、Other Settings
+
 Scan and Connect
-Before scanning and connecting the device, you need to call the authentication interface to get permission. After the authentication is passed, you can scan the connection. Otherwise, you will not be able to scan the connection to any device. For classic bluetooth and audio devices, you don't need to call the scan connection method, just listen for the corresponding notification message to connect to the device. For classic bluetooth devices, you need the bluetooth option in the mobile Settings to manually connect the device. These devices include: iHealth BP3 、iHealth ABI、iHealth BP5 、iHealth BP7 、iHealth HS3、BG5. For the BG1, all you need to do is plug the device into the phone's headphone jack. Before scanning the device connection, you need to initialize the code of the corresponding device and add listening notification messages.
+
+Before scanning and connecting the device, you need to call the authentication interface to get permission. 
+
+After the authentication is passed, you can scan the connection. 
+
+Otherwise, you will not be able to scan the connection to any device.
+
+For classic bluetooth and audio devices, you don't need to call the scan connection method, just listen for the corresponding notification message to connect to the device. 
+
+For classic bluetooth devices, you need the bluetooth option in the mobile Settings to manually connect the device. 
+
+These devices include: iHealth BP3 、iHealth ABI、iHealth BP5 、iHealth BP7 、iHealth HS3、BG5. 
+
+For the BG1, all you need to do is plug the device into the phone's headphone jack. 
+
+Before scanning the device connection, you need to initialize the code of the corresponding device and add listening notification messages.
