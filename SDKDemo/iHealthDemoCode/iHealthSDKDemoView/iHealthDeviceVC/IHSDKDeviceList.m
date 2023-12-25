@@ -30,7 +30,8 @@
 #import "DeviceBP3LVC.h"
 #import "DeviceHS2SVC.h"
 #import "DevicePT3SBTVC.h"
-
+#import "DeviceBP7SVC.h"
+#import "DeviceHS2SProVC.h"
 /* Notification */
 #define kiHealthSDKAddNoti(obj,notiName,sel) [NSNotificationCenter.defaultCenter addObserver:obj selector:(sel) name:(notiName) object:nil]
 #define kiHealthSDKRemNoti(obj,notiName) [NSNotificationCenter.defaultCenter removeObserver:obj name:(notiName) object:nil]
@@ -155,7 +156,7 @@
             kiHealthSDKAddNoti(self, HS2SConnectFailed, @selector(DeviceConnectFail:));
             kiHealthSDKAddNoti(self, HS2SDisConnectNoti, @selector(DeviceDisConnect:));
             
-            [BP3LController shareBP3LController];
+            [HS2SController shareIHHS2SController];
             break;
         case HealthDeviceType_PT3SBT:
 
@@ -165,6 +166,24 @@
             kiHealthSDKAddNoti(self, PT3SBTDisConnectNoti, @selector(DeviceDisConnect:));
             
             [PT3SBTController shareIHPT3SBTController];
+            break;
+        case HealthDeviceType_BP7S:
+
+            kiHealthSDKAddNoti(self, BP7SDiscover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, BP7SConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, BP7SConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, BP7SDisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [BP7SController shareBP7SController];
+            break;
+        case HealthDeviceType_HS2SPro:
+
+            kiHealthSDKAddNoti(self, HS2SPRODiscover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, HS2SPROConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, HS2SPROConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, HS2SPRODisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [HS2SPROController shareIHHS2SPROController];
             break;
         default:
             break;
@@ -182,6 +201,8 @@
 - (void)DeviceDiscover:(NSNotification*)tempNoti{
 
     NSDictionary *dic = [tempNoti userInfo];
+    
+    NSLog(@"scan dic:%@",dic);
     
     
     if (dic[@"ID"]!=nil &&(_SDKDeviceType!=HealthDeviceType_NT13B)) {
@@ -253,12 +274,20 @@
                 DeviceBP3LVC *vc = [DeviceBP3LVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
-            }else if ([deviceName containsString:@"HS2S"]) {
+            }else if ([deviceName isEqualToString:@"HS2S"]) {
                 DeviceHS2SVC *vc = [DeviceHS2SVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
             }else if ([deviceName containsString:@"PT3SBT"]) {
                 DevicePT3SBTVC *vc = [DevicePT3SBTVC new];
+                vc.deviceId = deviceId;
+                [self.navigationController pushViewController:vc animated:YES];
+            }else if ([deviceName containsString:@"BP7S"]) {
+                DeviceBP7SVC *vc = [DeviceBP7SVC new];
+                vc.deviceId = deviceId;
+                [self.navigationController pushViewController:vc animated:YES];
+            }else if ([deviceName isEqualToString:@"HS2S Pro"]) {
+                DeviceHS2SProVC *vc = [DeviceHS2SProVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
             }

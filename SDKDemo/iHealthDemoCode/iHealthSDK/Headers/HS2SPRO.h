@@ -120,6 +120,10 @@ typedef NS_ENUM(NSInteger, HS2SProImpedanceMeasureErrorCode) {
 @property (assign, nonatomic) double bmr;
 /// leanWeight = weight*(1-bodyFatPercentage)
 @property (assign, nonatomic) double leanWeight;
+///encrypt Impedance
+@property (assign, nonatomic) uint32_t encryptImpedance;
+///login Id
+@property (assign, nonatomic) uint8_t loginId;
 
 @end
 

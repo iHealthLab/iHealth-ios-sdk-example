@@ -19,6 +19,9 @@
 @property (strong, nonatomic) NSString *serialNumber;
 @property (strong, nonatomic) NSString *firmwareVersion;
 
+///device time
+@property (strong, nonatomic) NSDate *deviceTS;
+
 //（Firmware version must more than or equal to 3.1.1 support this）
 @property (assign,nonatomic) PO3ChargeState state;
 
@@ -48,7 +51,7 @@
 
 
 /**
- * Restore Historical data
+ * Restore Historical data （The firmware version is 3.2.0 and the isRightTime field is added. This field marks whether the historical data needs time correction (0: no need 1: need correction)）
  * @param offlineDataCount Number of historical offline data measurements.
  * @param offlineData date, spo2, bpm, and wave.
  * @param offlineWaveData Pulse intensity, corresponding key: wave
@@ -100,6 +103,15 @@ You need to listen to this message to get ChargeState
  */
 
 
+/**
+ * GetDeviceTime    （Firmware version must more than or equal to 3.2.0 support this API）
+ * @param time  DeviceTime  
+ * @param errorBlock Communication error codes
+ */
+-(void)commandPO3GetDeviceTime:(DisposePO3TimeBlock)time withErrorBlock:(DisposePO3ErrorBlock)errorBlock;
+
+//Determine whether API for obtaining device time of new PO3 devices is supported
+-(BOOL)supportNewPO3GetDeviceTSCommand;
 
 @end
 

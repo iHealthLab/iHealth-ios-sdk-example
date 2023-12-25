@@ -629,4 +629,155 @@ typedef NS_ENUM(NSInteger, BG1AStripState) {
     BG1AStripState_PullOff,
 };
 
+
+#pragma mark - BG5A
+/*
+ BG5A Notification Name
+ */
+/* BG5ADiscover userInfo
+{
+   RSSI = -60;
+   DeviceName = "BG5A";
+   SerialNumber = "385B44DBC723";
+}
+*/
+#define BG5ADiscover        @"BG5ADiscover"
+/* BG5AConnectFailed userInfo
+ {
+     DeviceName = "BG5A";
+     SerialNumber = "385B44DDC723";
+     Error = 0; // 0: connect ble fail 1: auth fail 2: bluetooth is not available
+     MAC = "385B44DBC723";
+     ErrorMessage = ""; //
+ }
+ */
+#define BG5AConnectFailed   @"BG5AConnectFailed"
+/* BG5AConnectNoti userInfo
+{
+    ID = "EDA03FE5-0F75-4950-A036-111D43B6394B";
+    SerialNumber = "385B44DDC723";
+    ProtocolString = "com.jiuan.BGV45";
+    DeviceName = "BG5A";
+    FirmwareVersion = "1.0.0";
+    HardwareVersion = "1.0.0";
+}
+*/
+#define BG5AConnectNoti     @"BG5AConnectNoti"
+/* BG5ADisConnectNoti userInfo
+{
+    ProtocolString = "com.jiuan.BGV45";
+    ID = "EDA03FE5-0F75-4950-A036-111D43B6394B";
+    SerialNumber = "385B44DDC723";
+}
+*/
+#define BG5ADisConnectNoti  @"BG5ADisConnectNoti"
+
+/* kBG5ANotiNameStripStatus
+ The device collects enough blood to measure, and the result will be post in a few seconds. The notification's userInfo:
+ {
+    mac = "385B44DDC723";
+    status = 1; // 1: Strip in 2: Strip out
+ 
+ }
+ Tips:
+ It will be posted immediately after the bluetooth is connected. Because only after strip in, the device is ready to connect bluetooth.
+ */
+#define kBG5ANotiNameStripStatus    @"kBG5ANotiNameStripStatus"
+
+/* kBG5ANotiNameResult
+ The device sends the measurement result (the value is in the unit mg/dL). The notification's userInfo:
+ {
+    mac = "385B44DDC723";
+    result = 80;
+ }
+ */
+#define kBG5ANotiNameResult         @"kBG5ANotiNameResult"
+
+/* kBG5ANotiNameError
+ The device sends an error code. The notification's userInfo:
+ {
+    mac = "385B44DDC723";
+    error = 1; // see BG1ADeviceError
+ }
+ */
+#define kBG5ANotiNameError          @"kBG5ANotiNameError"
+
+/* kBG5ANotiNameChargeState
+ The device sends the measurement result (the value is in the unit mg/dL). The notification's userInfo:
+ {
+    mac = "385B44DDC723";
+    state = 1; 1 enters the charging state, 2 exits the charging state, 3 is fully charged
+ }
+ */
+#define kBG5ANotiNameChargeState         @"kBG5ANotiNameChargeState"
+
+
+/*
+ BG5A Error Code
+ */
+typedef NS_ENUM(int,BG5ADeviceError) {
+    
+    /// Strip removed in the middle of reading, repeat the test with a new strip.
+    BG5AError_PullOffStripWhenMeasuring = 0x01,
+    ///There is unknown interference in the strip port, please clean and try again.  If the problem still cannot be resolved, please visit our support website for assistance  at:www.ihealthlabs.com/support
+    BG5ADeviceError_SelfCheckError=0x02,
+    /// Strip is used or unknown moisture detected, discard the test strip and repeat the test with a new strip.
+    BG5ADeviceError_StripUsedError = 0x03,
+    //EEPROM error. Please visit our support website for assistance  at:www.ihealthlabs.com/support
+    BG5ADeviceError_EEPROMError = 0x04,
+    /// The environmental temperature is beyond normal range(50~104℉), place the meter at room temperature for at least 30 minutes, then repeat the test.
+    BG5ADeviceError_LowTemperature = 0x05,
+    ///The environmental temperature is beyond normal range(50~104℉), place the meter at room temperature for at least 30 minutes, then repeat the test.
+    BG5ADeviceError_HighTemperature = 0x06,
+    ///Bluetooth module failure. Press and hold the M button for 7 seconds to reset and try again after charging. If the problem still cannot be resolved, please visit our support website for assistance  at:www.ihealthlabs.com/support
+    BG5ADeviceError_BluetoothModuleError = 0x07,
+    ///Hardware device error. Please visit our support website for assistance  at:www.ihealthlabs.com/support
+    BG5ADeviceError_NoCheckFlagError1 = 0x0A,
+    ///Hardware device error. Please visit our support website for assistance  at:www.ihealthlabs.com/support
+    BG5ADeviceError_NoCheckFlagError2 = 0x0B,
+    ///Blood Timeout.
+    BG5ADeviceError_BloodTimeout = 0x0C,
+    ///Unknown interference detected, please repeat the test.
+    BG5ADeviceError_XM1Error = 0x0D,
+    ///Unknown interference detected, please repeat the test. If the problem still cannot be resolved, please visit our support website for assistance  at:www.ihealthlabs.com/support
+    BG5ADeviceError_StripTypeCannotRecognize = 0x0E,
+    ///Strip is used or unknown moisture detected, discard the test strip and repeat the test with a new strip.
+    BG5ADeviceError_ResultIsZero = 0x0F,
+    ///Strip is used or unknown moisture detected, discard the test strip and repeat the test with a new strip.
+    BG5ADeviceError_LowBattery = 0x10,
+    ///Strip is used or unknown moisture detected, discard the test strip and repeat the test with a new strip.
+    BG5ADeviceError_AlgorithmError = 0x11,
+    //Strip is used or unknown moisture detected, discard the test strip and repeat the test with a new strip.
+    BG5ADeviceError_SampleException = 0x12,
+    //Long duration without obtain sample,please reinsert the test strip.
+    BG5ADeviceError_InsertTimeout = 0x13,
+    ///  Reject Change MeasureType
+    BG5ADeviceError_RejectChangeMeasureType = 0xF0,
+    ///  Parameter input error.
+    BG5ADeviceError_ParameterError = 400,
+    /// Glucose test result is low.
+    BG5ADeviceError_ResultIsTooLow = 401,
+    /// Glucose test result is high.
+    BG5ADeviceError_ResultIsTooHigh = 402,
+  
+    
+};
+
+typedef NS_ENUM(uint8_t,BG5AMeasureType) {
+    BG5AMeasureType_BloodSugar  = 0x00,
+    BG5AMeasureType_CTL         = 0x01,
+};
+
+/**
+ BG5A strip state
+ */
+typedef NS_ENUM(NSInteger, BG5AStripState) {
+    /// Unknown state
+    BG5AStripState_Unknown = -1,
+    /// Insert
+    BG5AStripState_Insert,
+    /// Pull off
+    BG5AStripState_PullOff,
+};
+
 #endif

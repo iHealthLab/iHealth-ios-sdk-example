@@ -138,6 +138,11 @@ typedef void (^DisposePO3EndMeasure)(BOOL setSuc);
  */
 typedef void (^DisposePO3TurnOffBT)(BOOL setSuc);
 
+/**
+ device TS
+ */
+typedef void (^DisposePO3TimeBlock)(NSDate *deviceTS);
+
 
 /**
  PO1ErrorID

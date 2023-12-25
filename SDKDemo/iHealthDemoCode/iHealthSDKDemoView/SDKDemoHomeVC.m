@@ -34,9 +34,8 @@
     self.myTable.dataSource = self;
     [self.myTable addToView:self.view];
     
-    self.titles = @[@"KN-550BT",@"BP5S",@"HS2S",@"AM6",@"BG5S",@"BG1A",@"PT3SBT",@"BP3L",@"PO3",@"PO1",@"BG1",@"BG1S"];
+    self.titles = @[@"KN-550BT",@"BP5S",@"HS2S",@"AM6",@"BG5S",@"BG1A",@"PT3SBT",@"BP3L",@"PO3",@"PO1",@"BG1",@"BG1S",@"BP7S",@"HS2SPro"];
     
-//    self.titles = @[@"AM6"];
     
 }
 #pragma mark - Lazy
@@ -96,10 +95,17 @@
     }else if (indexPath.row==11){
         
         vc.SDKDeviceType=HealthDeviceType_BG1S;
+    }else if (indexPath.row==12){
+        
+        vc.SDKDeviceType=HealthDeviceType_BP7S;
+    }else if (indexPath.row==13){
+        
+        vc.SDKDeviceType=HealthDeviceType_HS2SPro;
     }
     
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 /*
 #pragma mark - Navigation
 

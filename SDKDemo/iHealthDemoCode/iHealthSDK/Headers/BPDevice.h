@@ -26,6 +26,23 @@
  */
 -(void)commandStartMeasureWithZeroingState:(BlockZero)blockZeroState pressure:(BlockPressure)pressure waveletWithHeartbeat:(BlockWavelet)blockWaveletWithHeartbeat waveletWithoutHeartbeat:(BlockWavelet)blockWaveletWithoutHeartbeat  result:(BlockMeasureResult)result errorBlock:(BlockError)error;
 
+
+
+/**
+ * Establish measurement connection and start BP measurement.
+ * @param time  Pressurized time
+ * @param setPressure  Maximum pressure increase
+ * @param model  0:Auto  1:Manual
+ * @param toleranceScope  tolerance scope
+ * @param blockZeroState Zeroing state
+ * @param pressure  Pressure value in the process of measurement, the unit is ‘mmHg’.
+ * @param blockWaveletWithHeartbeat   Wavelet data set with heart beat.
+ * @param blockWaveletWithoutHeartbeat   Wavelet data set without heart beat.
+ * @param result   result of the measurement, including systolic pressure, diastolic pressure, pulse rate and irregular judgment. Relevant key: time, sys, dia, heartRate, irregular. irregular will be 0 or 1.
+ * @param error   Return error codes.
+ */
+-(void)commandStartMeasureWithTime:(NSNumber*)time setPressure:(NSNumber*)setPressure measureModel:(NSNumber*)model toleranceScope:(NSNumber*)toleranceScope ZeroingState:(BlockZero)blockZeroState pressure:(BlockPressure)pressure waveletWithHeartbeat:(BlockWavelet)blockWaveletWithHeartbeat waveletWithoutHeartbeat:(BlockWavelet)blockWaveletWithoutHeartbeat  result:(BlockMeasureResult)result errorBlock:(BlockError)error;
+
 /**
  * stop measuring state of BP
  * @param success  The block return means measurement has been successfully stoped.

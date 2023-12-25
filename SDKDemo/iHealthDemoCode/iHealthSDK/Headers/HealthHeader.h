@@ -60,6 +60,7 @@ typedef NS_ENUM(NSUInteger, HealthDeviceType) {
     HealthDeviceType_PT3SBT,
     HealthDeviceType_PO1,
     HealthDeviceType_BG1A,
+    HealthDeviceType_BG5A,
     HealthDeviceType_AM6,
 };
 

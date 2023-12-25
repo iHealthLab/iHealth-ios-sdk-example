@@ -20,4 +20,6 @@
 #import "BG1SController.h"
 #import "BG1A.h"
 #import "BG1AController.h"
+#import "BG5A.h"
+#import "BG5AController.h"
 #endif
