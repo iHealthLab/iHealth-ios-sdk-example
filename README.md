@@ -19,7 +19,7 @@ Authentication API:
 ### BP:
 iHealth BP3 、iHealth BP3L、 iHealth BP5 、iHealth BP7 、iHealth BP7S、 iHealth Continua BP、 iHealth KN550BT、iHealth ABI 、iHealth ABP100、 iHealth BPM1、 iHealth BP5S
 ### HS:
-iHealth HS2、iHealth HS2S、 iHealth HS3、 iHealth HS4、iHealth HS4S(Same with HS4)、 iHealth HS5、 iHealth HS5S、 iHealth HS6
+iHealth HS2、iHealth HS2S、 iHealth HS3、 iHealth HS4、iHealth HS4S(Same with HS4)、 iHealth HS5、 iHealth HS5S、 iHealth HS6 、iHealth HS2SPro
 ### AM:
 iHealth AM3 、iHealth AM3S 、iHealth AM4 、iHealth AM5
 ### BG:
@@ -33,7 +33,7 @@ THV3 、TS28B 、NT13B、PT3SBT
 ### Authentication:
 IHSDKCloudUser.h
 ### Library:
-iHealthSDK2.10.0.a
+iHealthSDK2.11.0.a
 
 1、supports iOS 9.0 and above. 
 
