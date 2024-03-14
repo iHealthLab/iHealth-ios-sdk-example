@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1719EBB186EB8BCB7D15A318 /* Pods_iHealthDemoCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D39B4E1DDBF63046F19A5B4 /* Pods_iHealthDemoCode.framework */; };
 		189BBC7F1E9490A00098589E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189BBC7D1E9490A00098589E /* InfoPlist.strings */; };
+		231C77302BA2EB9400F2FE93 /* DeviceBP5VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 231C772E2BA2EB9400F2FE93 /* DeviceBP5VC.m */; };
 		23FD916A2B396FAE00EEB10A /* iHealthSDK2.11.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FD91682B396FAD00EEB10A /* iHealthSDK2.11.0.a */; };
 		23FD92112B39727B00EEB10A /* DeviceBP7SVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FD92102B39727B00EEB10A /* DeviceBP7SVC.m */; };
 		23FD92142B3972A800EEB10A /* DeviceHS2SProVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FD92132B3972A800EEB10A /* DeviceHS2SProVC.m */; };
@@ -78,6 +79,8 @@
 		189BBC7E1E9490A00098589E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18DC25F21E0CB0DD00301FFB /* iHealthDemoCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iHealthDemoCode.entitlements; sourceTree = "<group>"; };
 		1D39B4E1DDBF63046F19A5B4 /* Pods_iHealthDemoCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthDemoCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		231C772D2BA2EB9400F2FE93 /* DeviceBP5VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceBP5VC.h; sourceTree = "<group>"; };
+		231C772E2BA2EB9400F2FE93 /* DeviceBP5VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceBP5VC.m; sourceTree = "<group>"; };
 		23FD91682B396FAD00EEB10A /* iHealthSDK2.11.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iHealthSDK2.11.0.a; sourceTree = "<group>"; };
 		23FD916F2B39713E00EEB10A /* BP5SRW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BP5SRW.h; sourceTree = "<group>"; };
 		23FD91702B39713E00EEB10A /* IDOLogEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDOLogEnum.h; sourceTree = "<group>"; };
@@ -380,6 +383,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231C772F2BA2EB9400F2FE93 /* BP5 */ = {
+			isa = PBXGroup;
+			children = (
+				231C772D2BA2EB9400F2FE93 /* DeviceBP5VC.h */,
+				231C772E2BA2EB9400F2FE93 /* DeviceBP5VC.m */,
+			);
+			path = BP5;
+			sourceTree = "<group>";
+		};
 		23FD916E2B39712500EEB10A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,6 +773,7 @@
 		45A870202AA8752A00C2A284 /* BP */ = {
 			isa = PBXGroup;
 			children = (
+				231C772F2BA2EB9400F2FE93 /* BP5 */,
 				23FD920E2B39725F00EEB10A /* BP7S */,
 				45A870242AA8768500C2A284 /* BP5S */,
 				45A870232AA8767800C2A284 /* BP3L */,
@@ -1072,6 +1085,7 @@
 				45F4E0682A83351300CBC224 /* DevicePO1VC.m in Sources */,
 				3F9531BA29E5499A00A4BFD8 /* IHSDKBaseController.m in Sources */,
 				3F9531E629E566A700A4BFD8 /* IHSDKDemoRoundCornerButton.m in Sources */,
+				231C77302BA2EB9400F2FE93 /* DeviceBP5VC.m in Sources */,
 				45A21F232A38664300242D08 /* UIButton+WPKButton.m in Sources */,
 				45A21F2A2A38A90100242D08 /* AM6SettingsCell.m in Sources */,
 				45A21F4D2A394B0400242D08 /* UILabel+WPKLabel.m in Sources */,

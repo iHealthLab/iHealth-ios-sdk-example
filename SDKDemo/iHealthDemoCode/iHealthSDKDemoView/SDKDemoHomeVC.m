@@ -11,6 +11,9 @@
 #import "IHSDKBaseCell.h"
 #import "IHSDKDeviceList.h"
 
+#import "BPHeader.h"
+#import "DeviceBP5VC.h"
+
 #define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 #define APP_BUILD [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 
@@ -24,6 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [BP5Controller shareBP5Controller];
+    
     // Do any additional setup after loading the view.
 }
 - (void)setupInterface{
@@ -34,7 +40,7 @@
     self.myTable.dataSource = self;
     [self.myTable addToView:self.view];
     
-    self.titles = @[@"KN-550BT",@"BP5S",@"HS2S",@"AM6",@"BG5S",@"BG1A",@"PT3SBT",@"BP3L",@"PO3",@"PO1",@"BG1",@"BG1S",@"BP7S",@"HS2SPro"];
+    self.titles = @[@"KN-550BT",@"BP5S",@"HS2S",@"AM6",@"BG5S",@"BG1A",@"PT3SBT",@"BP3L",@"PO3",@"PO1",@"BG1",@"BG1S",@"BP7S",@"HS2SPro",@"BP5"];
     
     
 }
@@ -101,6 +107,13 @@
     }else if (indexPath.row==13){
         
         vc.SDKDeviceType=HealthDeviceType_HS2SPro;
+    }else if (indexPath.row==14){
+        
+        DeviceBP5VC*bp5vc=[[DeviceBP5VC alloc] init];
+        
+        [self.navigationController pushViewController:bp5vc animated:YES];
+        
+        return;
     }
     
     [self.navigationController pushViewController:vc animated:YES];
