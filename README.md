@@ -17,7 +17,7 @@ Authentication API:
 ## Native SDK supported devices list
 
 ### BP:
-iHealth BP3 、iHealth BP3L、 iHealth BP5 、iHealth BP7 、iHealth BP7S、 iHealth Continua BP、 iHealth KN550BT、iHealth ABI 、iHealth ABP100、 iHealth BPM1、 iHealth BP5S
+iHealth BP3 、iHealth BP3L、 iHealth BP5 、iHealth BP7 、iHealth BP7S、 iHealth Continua BP、 iHealth KN550BT、iHealth ABI 、iHealth ABP100、 iHealth BPM1、 iHealth BP5S 、iHealth KD723 
 ### HS:
 iHealth HS2、iHealth HS2S、 iHealth HS3、 iHealth HS4、iHealth HS4S(Same with HS4)、 iHealth HS5、 iHealth HS5S、 iHealth HS6 、iHealth HS2SPro
 ### AM:
@@ -33,9 +33,9 @@ THV3 、TS28B 、NT13B、PT3SBT
 ### Authentication:
 IHSDKCloudUser.h
 ### Library:
-iHealthSDK2.11.0.a
+iHealthSDK2.12.0.a
 
-1、supports iOS 9.0 and above. 
+1、supports iOS 12.0 and above. 
 
 2、Frameworks
 

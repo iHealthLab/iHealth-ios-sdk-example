@@ -40,7 +40,7 @@
     self.myTable.dataSource = self;
     [self.myTable addToView:self.view];
     
-    self.titles = @[@"KN-550BT",@"BP5S",@"HS2S",@"AM6",@"BG5S",@"BG1A",@"PT3SBT",@"BP3L",@"PO3",@"PO1",@"BG1",@"BG1S",@"BP7S",@"HS2SPro",@"BP5"];
+    self.titles = @[@"KN-550BT",@"BP5S",@"HS2S",@"AM6",@"BG5S",@"BG1A",@"PT3SBT",@"BP3L",@"PO3",@"PO1",@"BG1",@"BG1S",@"BP7S",@"HS2SPro",@"BP5",@"CONTINUA_BP",@"KD723_V2"];
     
     
 }
@@ -114,6 +114,12 @@
         [self.navigationController pushViewController:bp5vc animated:YES];
         
         return;
+    }else if (indexPath.row==15){
+        
+        vc.SDKDeviceType=HealthDeviceType_CONTINUA_BP;
+    }else if (indexPath.row==16){
+        
+        vc.SDKDeviceType=HealthDeviceType_KD723_V2;
     }
     
     [self.navigationController pushViewController:vc animated:YES];

@@ -23,6 +23,7 @@ typedef NS_ENUM(NSUInteger, HealthDeviceType) {
     HealthDeviceType_KD926,
     HealthDeviceType_KD723,
     HealthDeviceType_ABPM,
+    HealthDeviceType_KD723_V2,//KD723 Not continua device
     //PO
     HealthDeviceType_PO3,
     //HS

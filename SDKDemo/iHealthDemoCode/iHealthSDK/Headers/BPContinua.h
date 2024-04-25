@@ -17,7 +17,6 @@
  */
 @interface BPContinua : BPDevice
 
-
 /**
  * Upload offline data.
  * @param  uploadDataArray	offline data set, including MAP, dataID, dia, heartRate, irregular, measureState, sys, time, unit, userId.
@@ -52,5 +51,7 @@
  * Disconnect current device
  */
 -(void)commandDisconnectDevice;
+
+
 
 @end

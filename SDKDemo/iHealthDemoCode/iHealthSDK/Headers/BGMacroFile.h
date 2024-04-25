@@ -766,6 +766,7 @@ typedef NS_ENUM(int,BG5ADeviceError) {
 typedef NS_ENUM(uint8_t,BG5AMeasureType) {
     BG5AMeasureType_BloodSugar  = 0x00,
     BG5AMeasureType_CTL         = 0x01,
+    BG5AMeasureType_EStrip      = 0x02,//Electronic test strip mode
 };
 
 /**

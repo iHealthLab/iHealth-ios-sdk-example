@@ -32,6 +32,8 @@
 #import "DevicePT3SBTVC.h"
 #import "DeviceBP7SVC.h"
 #import "DeviceHS2SProVC.h"
+#import "DeviceCONTINUA_BPVC.h"
+#import "DeviceKD723_V2VC.h"
 /* Notification */
 #define kiHealthSDKAddNoti(obj,notiName,sel) [NSNotificationCenter.defaultCenter addObserver:obj selector:(sel) name:(notiName) object:nil]
 #define kiHealthSDKRemNoti(obj,notiName) [NSNotificationCenter.defaultCenter removeObserver:obj name:(notiName) object:nil]
@@ -185,6 +187,30 @@
             
             [HS2SPROController shareIHHS2SPROController];
             break;
+        case HealthDeviceType_CONTINUA_BP:
+
+            kiHealthSDKAddNoti(self, ContinuaBPDiscover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, ContinuaBPConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, ContinuaBPConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, ContinuaBPDisConnectNoti, @selector(DeviceDisConnect:));
+            
+            kiHealthSDKAddNoti(self, KD723Discover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, KD723ConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, KD723ConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, KD723DisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [BPContinuaController sharedController];
+            break;
+        case HealthDeviceType_KD723_V2:
+
+            
+            kiHealthSDKAddNoti(self, KD723_V2Discover, @selector(DeviceDiscover:));
+            kiHealthSDKAddNoti(self, KD723_V2ConnectNoti, @selector(DeviceConnect:));
+            kiHealthSDKAddNoti(self, KD723_V2ConnectFailed, @selector(DeviceConnectFail:));
+            kiHealthSDKAddNoti(self, KD723_V2DisConnectNoti, @selector(DeviceDisConnect:));
+            
+            [KD723_V2Controller shareIHKD723Controller];
+            break;
         default:
             break;
     }
@@ -290,6 +316,21 @@
                 DeviceHS2SProVC *vc = [DeviceHS2SProVC new];
                 vc.deviceId = deviceId;
                 [self.navigationController pushViewController:vc animated:YES];
+            }else if ([deviceName isEqualToString:@"KD-723"] ||[deviceName isEqualToString:@"Push"]||[deviceName isEqualToString:@"BP Monitor"]) {
+                
+                NSString *hardwareVersion = noti.userInfo[@"HardwareVersion"];
+                if ([hardwareVersion isEqualToString:@"1.1.0"]) {
+                    
+                    DeviceKD723_V2VC*vc = [DeviceKD723_V2VC new];
+                    vc.deviceId = deviceId;
+                    [self.navigationController pushViewController:vc animated:YES];
+                    
+                }else{
+                    
+                    DeviceCONTINUA_BPVC *vc = [DeviceCONTINUA_BPVC new];
+                    vc.deviceId = deviceId;
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
             }
 
         }
